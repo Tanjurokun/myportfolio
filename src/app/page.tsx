@@ -54,14 +54,6 @@ export default function Home() {
                     <FaPhone className="mr-2 text-cyan-400" />
                     <span className="font-mono text-sm">09-797690078</span>
                   </div>
-                  <div className="flex items-center text-slate-300">
-                    <FaBirthdayCake className="mr-2 text-cyan-400" />
-                    <span className="font-mono text-sm">29-Dec-1995</span>
-                  </div>
-                  <div className="flex items-center text-slate-300">
-                    <FaGlobe className="mr-2 text-cyan-400" />
-                    <span className="font-mono text-sm">Myanmar, Buddhist</span>
-                  </div>
                 </div>
                 
                 <div className="mt-4 flex gap-4">
@@ -81,13 +73,12 @@ export default function Home() {
           {/* Career Objective */}
           <section className="bg-slate-800/80 p-6 rounded-xl border border-cyan-400/20 backdrop-blur-sm">
             <h2 className="text-2xl font-semibold text-cyan-300 mb-4 flex items-center">
-              <FaShieldAlt className="mr-3" /> Career Objective
+              <FaShieldAlt className="mr-3" /> Profile
             </h2>
             <p className="text-slate-300 leading-relaxed">
-              Seeking a Cyber Security Engineer position with 5+ years of IT security experience. 
-              Committed to contributing creativity and hard work toward organizational success 
-              in the fast-developing cybersecurity field. Prepared to dedicate best efforts with 
-              loyalty and participate in company growth.
+               I am Information Security Specialist with over 5 years of experience in IT security, skilled in vulnerability management,
+      SIEM, endpoint protection, and PCI DSS compliance. I&apos;m passionate about safeguarding digital infrastructures
+      and contributing to organizational growth with dedication and continuous learning.
             </p>
           </section>
 
