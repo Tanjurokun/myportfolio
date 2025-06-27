@@ -13,15 +13,15 @@ export default function Home() {
       <header className="relative isolate overflow-hidden bg-slate-900 py-10 shadow-lg border-b border-slate-700">
         <div className="max-w-6xl mx-auto text-center px-6">
           <h1 className="text-5xl font-extrabold text-cyan-400 tracking-tight">Thaw Zin Oo</h1>
-          <p className="text-xl mt-3 text-slate-300">Cyber Security Analyst</p>
+          <p className="text-xl mt-3 text-slate-300">Information Security Specialist</p>
           <div className="mt-5 flex justify-center gap-6 text-cyan-300">
             <Link href="mailto:thawzinoo0080@gmail.com" className="flex items-center space-x-2 hover:text-white">
               <FaEnvelope /><span>Email</span>
             </Link>
-            <Link href="#" className="flex items-center space-x-2 hover:text-white">
+            <Link href="https://www.linkedin.com/in/thaw-zin-oo/" className="flex items-center space-x-2 hover:text-white">
               <FaLinkedin /><span>LinkedIn</span>
             </Link>
-            <Link href="#" className="flex items-center space-x-2 hover:text-white">
+            <Link href="https://github.com/Tanjurokun/" className="flex items-center space-x-2 hover:text-white">
               <FaGithub /><span>GitHub</span>
             </Link>
           </div>
