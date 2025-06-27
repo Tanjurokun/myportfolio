@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaPhone, FaBirthdayCake, FaGlobe, FaNetworkWired } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaPhone, FaNetworkWired } from 'react-icons/fa';
 
 export default function Home() {
   return (
