@@ -1,7 +1,7 @@
-// pages/index.js
-import Head from 'next/head'
-import Link from 'next/link'
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
+// app/page.tsx
+import Head from 'next/head';
+import Link from 'next/link';
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -29,9 +29,10 @@ export default function Home() {
       </header>
 
       <main className="max-w-6xl mx-auto px-6 py-16 space-y-20">
-        <section className=\"grid grid-cols-1 gap-10\">
-          <h2 className=\"text-3xl font-semibold text-cyan-300 mb-8\">Profile</h2>
-          <div className=\"bg-slate-800 p-6 rounded-2xl shadow-lg\">
+        {/* Rest of your content remains the same */}
+        <section className="grid md:grid-cols-5 gap-10 items-start">
+          <h2 className="text-3xl font-semibold text-cyan-300 col-span-full md:col-span-1">Profile</h2><br/>
+          <div className="bg-slate-800 p-6 rounded-2xl shadow-lg md:col-span-4">
             <p className="leading-relaxed text-slate-300">
               I am a Information Security Specialist with over 5 years of experience in IT security, skilled in vulnerability management,
               SIEM, endpoint protection, and PCI DSS compliance. I&apos;m passionate about safeguarding digital infrastructures
@@ -139,5 +140,5 @@ export default function Home() {
         </section>
       </main>
     </div>
-  )
+  );
 }
