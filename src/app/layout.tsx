@@ -3,8 +3,8 @@ import { Metadata } from 'next'
 import { ReactNode } from 'react'
 
 export const metadata: Metadata = {
-  title: 'Toe Zayar Moe | Cyber Security Analyst',
-  description: 'Portfolio of Toe Zayar Moe',
+  title: 'Thaw Zin Oo | Information Security Specialist',
+  description: 'Portfolio of Thaw Zin Oo',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
