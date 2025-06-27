@@ -124,4 +124,20 @@ export default function Home() {
           </div>
         </section>
 
-        <section
+        <section>
+          <h2 className="text-3xl font-semibold text-cyan-300 mb-8">Education</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              "B.Sc. (Botany), YUDE Yangon",
+              "Diploma in Network Engineering, SQA (UK)"
+            ].map((edu, idx) => (
+              <div key={idx} className="bg-slate-800 p-5 rounded-xl shadow text-slate-300">
+                {edu}
+              </div>
+            ))}
+          </div>
+        </section>
+      </main>
+    </div>
+  )
+}
