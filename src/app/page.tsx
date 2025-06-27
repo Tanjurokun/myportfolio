@@ -41,7 +41,7 @@ export default function Home() {
               
               <div className="flex-1">
                 <h1 className="text-4xl font-extrabold text-cyan-400 tracking-tight">Thaw Zin Oo</h1>
-                <p className="text-xl mt-1 text-slate-300 font-mono">&lt;Cyber Security Specialist/&gt;</p>
+                <p className="text-xl mt-1 text-slate-300 font-mono">&lt;Information Security Specialist/&gt;</p>
                 
                 <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
                   <div className="flex items-center text-slate-300">
