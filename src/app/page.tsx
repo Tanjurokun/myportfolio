@@ -1,9 +1,14 @@
 // app/page.tsx
 'use client'; // Add this at the top for animations
 
-import Head from 'next/head';
 import Link from 'next/link';
 import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaLock, FaCode, FaServer } from 'react-icons/fa';
+
+// Add metadata for SEO (this can be in a separate layout.tsx or page.tsx)
+export const metadata = {
+  title: 'Thaw Zin Oo | Information Security Specialist',
+  description: 'Cybersecurity professional with 5+ years of experience in vulnerability management, SIEM, and endpoint protection',
+};
 
 export default function Home() {
   return (
