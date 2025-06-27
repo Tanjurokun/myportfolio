@@ -33,8 +33,8 @@ export default function Home() {
           <h2 className="text-3xl font-semibold text-cyan-300 col-span-full md:col-span-1">Profile</h2>
           <div className="bg-slate-800 p-6 rounded-2xl shadow-lg md:col-span-4">
             <p className="leading-relaxed text-slate-300">
-              I am a Cyber Security Analyst with over 5 years of experience in IT security, skilled in vulnerability management,
-              SIEM, endpoint protection, and PCI DSS compliance. I'm passionate about safeguarding digital infrastructures
+              I am a Information Security Specialist with over 5 years of experience in IT security, skilled in vulnerability management,
+              SIEM, endpoint protection, and PCI DSS compliance. I&apos;m passionate about safeguarding digital infrastructures
               and contributing to organizational growth with dedication and continuous learning.
             </p>
           </div>
