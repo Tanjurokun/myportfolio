@@ -2,7 +2,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaLock, FaCode, FaServer, FaPhone, FaBirthdayCake, FaGlobe, FaNetworkWired } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaPhone, FaBirthdayCake, FaGlobe, FaNetworkWired } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -35,11 +35,8 @@ export default function Home() {
         <header className="relative overflow-hidden bg-slate-900/80 py-10 shadow-lg border-b border-cyan-400/20 backdrop-blur-sm">
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center gap-8">
-              <div className="w-32 h-32 rounded-full bg-slate-800 border-2 border-cyan-400/50 overflow-hidden">
-                {/* Placeholder for your photo */}
-                <div className="w-full h-full bg-slate-700 flex items-center justify-center">
-                  <FaShieldAlt className="text-4xl text-cyan-400" />
-                </div>
+              <div className="w-32 h-32 rounded-full bg-slate-800 border-2 border-cyan-400/50 flex items-center justify-center">
+                <FaShieldAlt className="text-5xl text-cyan-400" />
               </div>
               
               <div className="flex-1">
@@ -97,7 +94,7 @@ export default function Home() {
           {/* Experience */}
           <section>
             <h2 className="text-2xl font-semibold text-cyan-300 mb-6 flex items-center">
-              <FaCode className="mr-3" /> Professional Experience
+              <FaShieldAlt className="mr-3" /> Professional Experience
             </h2>
             
             <div className="space-y-6">
@@ -300,7 +297,7 @@ export default function Home() {
           {/* Skills */}
           <section>
             <h2 className="text-2xl font-semibold text-cyan-300 mb-6 flex items-center">
-              <FaCode className="mr-3" /> Technical Skills
+              <FaShieldAlt className="mr-3" /> Technical Skills
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
