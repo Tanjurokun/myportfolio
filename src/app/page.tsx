@@ -42,30 +42,43 @@ export default function Home() {
 
         <section>
           <h2 className="text-3xl font-semibold text-cyan-300 mb-8">Experience</h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                title: 'Ayeyarwady Bank',
-                date: '(Feb 2025 – Present)',
-                details: 'Vulnerability Management, SIEM Deployment, SOC Engineering, PCI DSS Compliance, Trend Micro XDR, Cloud One Workload Security, Security Metrics & Reporting.'
-              },
-              {
-                title: 'A Bank',
-                date: '(Oct 2023 – Feb 2025)',
-                details: 'Firewall Management, WAAP Security, SIEM Tools, Patch Management, Endpoint Protection, Daily Security Operations.'
-              },
-              {
-                title: 'FDB Bank',
-                date: '(Sep 2020 – Oct 2023)',
-                details: 'Firewall Administration, Endpoint & Email Security, O365 & AD, System Server Management, Backup Solutions, ATM Security & Network Support.'
-              }
-            ].map((job, idx) => (
-              <div key={idx} className="bg-slate-800 p-6 rounded-2xl shadow-lg">
-                <h3 className="text-xl font-semibold text-cyan-200">{job.title}</h3>
-                <p className="text-sm text-slate-400">{job.date}</p>
-                <p className="mt-3 text-slate-300">{job.details}</p>
-              </div>
-            ))}
+          <div className="space-y-10">
+            <div className="bg-slate-800 p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-semibold text-cyan-200">Ayeyarwady Bank</h3>
+              <p className="text-sm text-slate-400">(Feb 2025 – Present)</p>
+              <ul className="list-disc list-inside mt-3 text-slate-300 space-y-1">
+                <li>Vulnerability Management and security patching</li>
+                <li>SIEM Deployment and log integration</li>
+                <li>SOC Engineering and threat detection rules</li>
+                <li>PCI DSS Compliance implementation</li>
+                <li>Trend Micro XDR and Cloud One Workload Security</li>
+                <li>Security Metrics Monitoring and Reporting</li>
+              </ul>
+            </div>
+
+            <div className="bg-slate-800 p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-semibold text-cyan-200">A Bank</h3>
+              <p className="text-sm text-slate-400">(Oct 2023 – Feb 2025)</p>
+              <ul className="list-disc list-inside mt-3 text-slate-300 space-y-1">
+                <li>Advanced Firewall & WAAP Security configuration</li>
+                <li>SIEM deployment and data source integration</li>
+                <li>Patch Management and Vulnerability Assessments</li>
+                <li>Daily Security Operations and Endpoint Protection</li>
+              </ul>
+            </div>
+
+            <div className="bg-slate-800 p-6 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-semibold text-cyan-200">FDB Bank</h3>
+              <p className="text-sm text-slate-400">(Sep 2020 – Oct 2023)</p>
+              <ul className="list-disc list-inside mt-3 text-slate-300 space-y-1">
+                <li>Firewall Administration across DC, DR, and branches</li>
+                <li>Endpoint and Email Security (Trend Micro, O365)</li>
+                <li>Active Directory and Hybrid Cloud Infrastructure</li>
+                <li>System Server Management and VMware vCenter</li>
+                <li>Backup solutions (Data Domain, Networker)</li>
+                <li>ATM Network Setup, IPsec VPN Configuration</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -111,20 +124,4 @@ export default function Home() {
           </div>
         </section>
 
-        <section>
-          <h2 className="text-3xl font-semibold text-cyan-300 mb-8">Education</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {[
-              "B.Sc. (Botany), YUDE Yangon",
-              "Diploma in Network Engineering, SQA (UK)"
-            ].map((edu, idx) => (
-              <div key={idx} className="bg-slate-800 p-5 rounded-xl shadow text-slate-300">
-                {edu}
-              </div>
-            ))}
-          </div>
-        </section>
-      </main>
-    </div>
-  )
-}
+        <section
