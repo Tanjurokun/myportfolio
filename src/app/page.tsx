@@ -247,13 +247,14 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 "CompTIA CySA+",
-                "Certified Cyber Defense Analyst (CCDA)",
+                "ISO/IEC 27001: 2022 Internal Auditor(ABSQ)",
                 "PCNSE (Palo Alto Networks)",
-                "Google Cybersecurity Certificate",
-                "OPSWAT Email Security Associate (OESA)",
+                "Security Analyst Level 1 (SAL1 TryHackMe)",
+                "Certified Cyber Defense Analyst (CCDA)",
                 "OPSWAT Network Security Associate (ONSA)",
+                "OPSWAT Email Security Associate (OESA)",
                 "Junior Cybersecurity Analyst (Cisco)",
-                "Fortinet Certified Associate",
+                "Fortinet Certified Associate Cybersecurity",
                 "Multi-Cloud Network Associate (Aviatrix)"
               ].map((cert, index) => (
                 <div key={index} className="bg-slate-800/80 p-4 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all group">
