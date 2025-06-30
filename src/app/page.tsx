@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaPhone, FaNetworkWired, FaCode, FaServer, FaLock, FaGlobe } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaPhone, FaNetworkWired, FaCode, FaServer, FaLock } from 'react-icons/fa';
 
 export default function Home() {
   return (
