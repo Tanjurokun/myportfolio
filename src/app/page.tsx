@@ -1,7 +1,8 @@
+// app/page.tsx
 'use client';
 
 import Link from 'next/link';
-import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaPhone, FaNetworkWired, FaCode, FaServer, FaLock } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaLinkedin, FaShieldAlt, FaPhone, FaNetworkWired } from 'react-icons/fa';
 
 export default function Home() {
   return (
@@ -69,56 +70,26 @@ export default function Home() {
         </header>
 
         <main className="max-w-6xl mx-auto px-6 py-10 space-y-12">
-          {/* Profile */}
+          {/* Career Objective */}
           <section className="bg-slate-800/80 p-6 rounded-xl border border-cyan-400/20 backdrop-blur-sm">
             <h2 className="text-2xl font-semibold text-cyan-300 mb-4 flex items-center">
-              <FaShieldAlt className="mr-3" /> Professional Profile
+              <FaShieldAlt className="mr-3" /> Profile
             </h2>
             <p className="text-slate-300 leading-relaxed">
-              Information Security Specialist with 5+ years of experience in cybersecurity, specializing in vulnerability management,
-              SIEM solutions, endpoint protection, and PCI DSS compliance. Passionate about securing digital infrastructures and
-              implementing robust security measures to protect organizational assets.
+               I am Information Security Specialist with over 5 years of experience in IT security, skilled in vulnerability management,
+      SIEM, endpoint protection, and PCI DSS compliance. I&apos;m passionate about safeguarding digital infrastructures
+      and contributing to organizational growth with dedication and continuous learning.
             </p>
           </section>
 
-          {/* Core Competencies */}
+          {/* Experience */}
           <section>
             <h2 className="text-2xl font-semibold text-cyan-300 mb-6 flex items-center">
-              <FaLock className="mr-3" /> Core Competencies
-            </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {[
-                "Vulnerability Assessment & Management",
-                "SIEM Implementation & Monitoring",
-                "Endpoint Protection Solutions",
-                "Network Security & Firewalls",
-                "PCI DSS Compliance",
-                "Cloud Security (AWS, Azure)",
-                "Incident Response & Handling",
-                "Security Policy Development",
-                "Threat Intelligence Analysis",
-                "Security Awareness Training",
-                "Risk Assessment & Mitigation",
-                "Penetration Testing Basics"
-              ].map((skill, index) => (
-                <div key={index} className="bg-slate-800/80 p-3 rounded-lg border border-cyan-400/20">
-                  <p className="text-slate-300 font-mono text-sm flex items-center">
-                    <span className="text-cyan-400 mr-2">▹</span>
-                    {skill}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* Professional Experience */}
-          <section>
-            <h2 className="text-2xl font-semibold text-cyan-300 mb-6 flex items-center">
-              <FaServer className="mr-3" /> Professional Experience
+              <FaShieldAlt className="mr-3" /> Professional Experience
             </h2>
             
             <div className="space-y-6">
-              {/* Current Position */}
+              {/* AYA Bank */}
               <div className="bg-slate-800/80 p-6 rounded-xl border border-cyan-400/20 backdrop-blur-sm">
                 <div className="flex justify-between items-start">
                   <h3 className="text-xl font-semibold text-cyan-200">Ayeyarwady Bank</h3>
@@ -133,10 +104,43 @@ export default function Home() {
                     <h4 className="text-cyan-300 font-medium mb-2">Vulnerability Management</h4>
                     <ul className="space-y-2">
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Implemented vulnerability management system and conducted regular assessments
+                        vulnerability scanning, regularly conducting vulnerability assessments
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Coordinated security patching across all enterprise systems
+                        Coordinated security patching across all systems
+                      </li>
+                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Recommendations for remediation and improving security posture
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-cyan-300 font-medium mb-2">SOC Engineering</h4>
+                    <ul className="space-y-2">
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Deployed and managed SIEM solutions
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Fine-tuned security use cases and correlation rules
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Integrated diverse data sources 
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-cyan-300 font-medium mb-2">PCI DSS Compliance</h4>
+                    <ul className="space-y-2">
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Implemented and maintained PCI DSS controls
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Ensured secure logging, monitoring, and retention 
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Supported internal and external pre-assessment
                       </li>
                     </ul>
                   </div>
@@ -145,17 +149,21 @@ export default function Home() {
                     <h4 className="text-cyan-300 font-medium mb-2">Security Operations</h4>
                     <ul className="space-y-2">
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Managed SIEM solutions and developed detection rules
+                        Managed Trend Micro XDR and Cloud One solutions
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Monitored security metrics and generated compliance reports
+                        Monitored security metrics and provided reports
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Provide technical support for security issues
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              {/* Previous Position 1 */}
+              {/* Previous experiences would follow the same pattern */}
+              {/* A Bank */}
               <div className="bg-slate-800/80 p-6 rounded-xl border border-cyan-400/20 backdrop-blur-sm">
                 <div className="flex justify-between items-start">
                   <h3 className="text-xl font-semibold text-cyan-200">Ayeyarwady Farmers Development Bank</h3>
@@ -165,34 +173,34 @@ export default function Home() {
                 </div>
                 <p className="text-slate-400 font-mono text-sm mt-1">Senior Cyber Security Engineer</p>
                 
-                <div className="mt-4 grid md:grid-cols-2 gap-6">
+                <div className="mt-4 space-y-4">
                   <div>
                     <h4 className="text-cyan-300 font-medium mb-2">Security Infrastructure</h4>
                     <ul className="space-y-2">
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Deployed advanced firewall and WAF solutions
+                        Implemented advanced firewall and F5 WAAP solutions
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Implemented enterprise-wide security patch management
+                        Managed security patch cycles and vulnerability assessments
                       </li>
                     </ul>
                   </div>
                   
                   <div>
-                    <h4 className="text-cyan-300 font-medium mb-2">Security Monitoring</h4>
+                    <h4 className="text-cyan-300 font-medium mb-2">Security Operations</h4>
                     <ul className="space-y-2">
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Configured SIEM tools with comprehensive data sources
+                        Deployed SIEM tools with comprehensive data integration
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Provided tier-2 support for security incidents
+                        Provided technical support for security incidents
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
 
-              {/* Previous Position 2 */}
+              {/* FDB Bank */}
               <div className="bg-slate-800/80 p-6 rounded-xl border border-cyan-400/20 backdrop-blur-sm">
                 <div className="flex justify-between items-start">
                   <h3 className="text-xl font-semibold text-cyan-200">Farmers Development Bank Mandalay</h3>
@@ -204,25 +212,37 @@ export default function Home() {
                 
                 <div className="mt-4 grid md:grid-cols-2 gap-6">
                   <div>
-                    <h4 className="text-cyan-300 font-medium mb-2">Endpoint Security</h4>
+                    <h4 className="text-cyan-300 font-medium mb-2">IT Security</h4>
                     <ul className="space-y-2">
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Managed EDR solutions across 500+ endpoints
+                        Security patching for firewalls and systems
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Conducted regular security configuration audits
+                        Managed Trend Micro EDR and Cloud One solutions
                       </li>
                     </ul>
                   </div>
                   
                   <div>
-                    <h4 className="text-cyan-300 font-medium mb-2">System Security</h4>
+                    <h4 className="text-cyan-300 font-medium mb-2">System Management</h4>
                     <ul className="space-y-2">
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Secured Active Directory and Office 365 environments
+                        Managed AD, Office 365, and hybrid environment
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Hardened virtualization infrastructure (vCenter/ESXi)
+                        Administered vCenter, ESXi, and virtual machines
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-cyan-300 font-medium mb-2">Network Infrastructure</h4>
+                    <ul className="space-y-2">
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Configured and maintained branch networks and ATMs
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Managed storage and backup systems (Networker, Data Domain)
                       </li>
                     </ul>
                   </div>
@@ -239,13 +259,14 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
                 "CompTIA CySA+",
-                "Certified Cyber Defense Analyst (CCDA)",
+                "ISO/IEC 27001: 2022 Internal Auditor(ABSQ)",
                 "PCNSE (Palo Alto Networks)",
-                "Google Cybersecurity Certificate",
-                "OPSWAT Email Security Associate (OESA)",
+                "Security Analyst Level 1 (SAL1 TryHackMe)",
+                "Certified Cyber Defense Analyst (CCDA)",
                 "OPSWAT Network Security Associate (ONSA)",
+                "OPSWAT Email Security Associate (OESA)",
                 "Junior Cybersecurity Analyst (Cisco)",
-                "Fortinet Certified Associate",
+                "Fortinet Certified Associate Cybersecurity",
                 "Multi-Cloud Network Associate (Aviatrix)"
               ].map((cert, index) => (
                 <div key={index} className="bg-slate-800/80 p-4 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all group">
@@ -253,7 +274,7 @@ export default function Home() {
                     <div className="bg-cyan-400/10 p-2 rounded-lg mr-4 group-hover:bg-cyan-400/20 transition-all">
                       <FaShieldAlt className="text-cyan-400" />
                     </div>
-                    <span className="font-mono text-cyan-300 text-sm">{cert}</span>
+                    <span className="font-mono text-cyan-300">{cert}</span>
                   </div>
                 </div>
               ))}
@@ -277,70 +298,60 @@ export default function Home() {
             </div>
           </section>
 
-          {/* Technical Skills */}
+          {/* Skills */}
           <section>
             <h2 className="text-2xl font-semibold text-cyan-300 mb-6 flex items-center">
-              <FaCode className="mr-3" /> Technical Skills
+              <FaShieldAlt className="mr-3" /> Technical Skills
             </h2>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-              <div className="bg-slate-800/80 p-4 rounded-xl border border-cyan-400/20">
-                <h3 className="text-cyan-300 font-medium mb-3">Security Tools</h3>
-                <ul className="space-y-2">
-                  {["Trend Micro", "Palo Alto", "SIEM Solutions", "Nessus", "Metasploit", "Wireshark"].map((skill, i) => (
-                    <li key={i} className="text-slate-300 text-sm">• {skill}</li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="bg-slate-800/80 p-4 rounded-xl border border-cyan-400/20">
-                <h3 className="text-cyan-300 font-medium mb-3">Networking</h3>
-                <ul className="space-y-2">
-                  {["Firewalls", "VPN", "IDS/IPS", "F5 WAAP", "Routing/Switching", "SD-WAN"].map((skill, i) => (
-                    <li key={i} className="text-slate-300 text-sm">• {skill}</li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="bg-slate-800/80 p-4 rounded-xl border border-cyan-400/20">
-                <h3 className="text-cyan-300 font-medium mb-3">Systems</h3>
-                <ul className="space-y-2">
-                  {["Windows Server", "Linux", "Active Directory", "Office 365", "VMware", "Azure AD"].map((skill, i) => (
-                    <li key={i} className="text-slate-300 text-sm">• {skill}</li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="bg-slate-800/80 p-4 rounded-xl border border-cyan-400/20">
-                <h3 className="text-cyan-300 font-medium mb-3">Cloud Security</h3>
-                <ul className="space-y-2">
-                  {["AWS Security", "Azure Security", "Cloud One", "CASB", "IAM", "Multi-Cloud"].map((skill, i) => (
-                    <li key={i} className="text-slate-300 text-sm">• {skill}</li>
-                  ))}
-                </ul>
-              </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[
+                "Vulnerability Assessment",
+                "SIEM & SOC Operations",
+                "Endpoint Protection",
+                "Firewall Administration",
+                "PCI DSS Compliance",
+                "Cloud Security",
+                "Network Security",
+                "Active Directory & O365",
+                "Virtualization Security",
+                "Web Application Firewall",
+                "Incident Response",
+                "Security Policies"
+              ].map((skill, index) => (
+                <div key={index} className="bg-slate-800/80 p-3 rounded-lg border border-cyan-400/20">
+                  <p className="text-slate-300 font-mono text-sm flex items-center">
+                    <span className="text-cyan-400 mr-2">▹</span>
+                    {skill}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Personal Strengths */}
+          <section className="bg-slate-800/80 p-6 rounded-xl border border-cyan-400/20 backdrop-blur-sm">
+            <h2 className="text-2xl font-semibold text-cyan-300 mb-4 flex items-center">
+              <FaShieldAlt className="mr-3" /> Personal Strengths
+            </h2>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                "Strong analytical and critical thinking skills",
+                "Ability to work independently with minimal supervision",
+                "Performs well under pressure",
+                "Effective multitasking capabilities",
+                "Quick learner with adaptability",
+                "Excellent communication skills",
+                "Strong organizational abilities",
+                "Detail-oriented with thorough approach"
+              ].map((strength, index) => (
+                <div key={index} className="flex items-start">
+                  <span className="text-cyan-400 mr-2 mt-1">•</span>
+                  <p className="text-slate-300">{strength}</p>
+                </div>
+              ))}
             </div>
           </section>
         </main>
-
-        {/* Footer */}
-        <footer className="bg-slate-900/80 py-6 border-t border-cyan-400/20 backdrop-blur-sm">
-          <div className="max-w-6xl mx-auto px-6 text-center">
-            <p className="text-slate-400 font-mono text-sm">
-              © {new Date().getFullYear()} Thaw Zin Oo. All rights reserved.
-            </p>
-            <div className="mt-2 flex justify-center gap-4">
-              <Link href="https://www.linkedin.com/in/thaw-zin-oo/" className="text-cyan-300 hover:text-white transition-colors">
-                <FaLinkedin className="text-lg" />
-              </Link>
-              <Link href="https://github.com/Tanjurokun/" className="text-cyan-300 hover:text-white transition-colors">
-                <FaGithub className="text-lg" />
-              </Link>
-              <Link href="mailto:thawzinoo0080@gmail.com" className="text-cyan-300 hover:text-white transition-colors">
-                <FaEnvelope className="text-lg" />
-              </Link>
-            </div>
-          </div>
-        </footer>
       </div>
 
       <style jsx global>{`
