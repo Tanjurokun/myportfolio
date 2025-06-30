@@ -239,74 +239,29 @@ export default function Home() {
             </div>
           </section>
 
-                              {/* Certifications */}
+          {/* Certifications */}
           <section>
             <h2 className="text-2xl font-semibold text-cyan-300 mb-6 flex items-center">
               <FaShieldAlt className="mr-3" /> Certifications
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                {
-                  name: "CompTIA CySA+",
-                  logo: "https://www.comptia.org/images/default-source/uploaded-images/comptia-logo.svg",
-                  bgColor: "bg-[#E53E3E]"
-                },
-                {
-                  name: "Certified Cyber Defense Analyst (CCDA)",
-                  logo: "https://www.credly.com/images/partner_badges/crest_logo_120x120.png",
-                  bgColor: "bg-[#2B6CB0]"
-                },
-                {
-                  name: "PCNSE (Palo Alto Networks)",
-                  logo: "https://upload.wikimedia.org/wikipedia/commons/a/ad/Palo_Alto_Networks_Logo.png",
-                  bgColor: "bg-[#000000]"
-                },
-                {
-                  name: "Google Cybersecurity Certificate",
-                  logo: "https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg",
-                  bgColor: "bg-[#4285F4]"
-                },
-                {
-                  name: "OPSWAT Email Security Associate (OESA)",
-                  logo: "https://www.opswat.com/themes/custom/opswat_theme/logo.svg",
-                  bgColor: "bg-[#4A5568]"
-                },
-                {
-                  name: "OPSWAT Network Security Associate (ONSA)",
-                  logo: "https://www.opswat.com/themes/custom/opswat_theme/logo.svg",
-                  bgColor: "bg-[#4A5568]"
-                },
-                {
-                  name: "Junior Cybersecurity Analyst (Cisco)",
-                  logo: "https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg",
-                  bgColor: "bg-[#0066CC]"
-                },
-                {
-                  name: "Fortinet Certified Associate",
-                  logo: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Fortinet_logo.svg",
-                  bgColor: "bg-[#E53E3E]"
-                },
-                {
-                  name: "Multi-Cloud Network Associate (Aviatrix)",
-                  logo: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Aviatrix_Systems_logo.png",
-                  bgColor: "bg-[#3182CE]"
-                }
+                "CompTIA CySA+",
+                "Certified Cyber Defense Analyst (CCDA)",
+                "PCNSE (Palo Alto Networks)",
+                "Google Cybersecurity Certificate",
+                "OPSWAT Email Security Associate (OESA)",
+                "OPSWAT Network Security Associate (ONSA)",
+                "Junior Cybersecurity Analyst (Cisco)",
+                "Fortinet Certified Associate",
+                "Multi-Cloud Network Associate (Aviatrix)"
               ].map((cert, index) => (
                 <div key={index} className="bg-slate-800/80 p-4 rounded-lg border border-cyan-400/20 hover:border-cyan-400/40 transition-all group">
                   <div className="flex items-center">
-                    <div className={`${cert.bgColor} p-2 rounded-lg mr-4 group-hover:bg-opacity-90 transition-all flex items-center justify-center w-10 h-10`}>
-                      <img 
-                        src={cert.logo} 
-                        alt={cert.name} 
-                        className="w-8 h-8 object-contain" 
-                        onError={(e) => {
-                          const target = e.target as HTMLImageElement;
-                          target.onerror = null;
-                          target.src = 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iIzBkZGNkYiIgZD0iTTEyLDEzQTEuNSwxLjUgMCAwLDAgMTMuNSwxMS41QTEuNSwxLjUgMCAwLDAgMTIsMTBBMS41LDEuNSAwIDAsMCAxMC41LDExLjVBMS41LDEuNSAwIDAsMCAxMiwxM00xMiwyQTEwLDEwIDAgMCwxIDIyLDEyQTEwLDEwIDAgMCwxIDEyLDIyQTEwLDEwIDAgMCwxIDIsMTJBMTAsMTAgMCAwLDEgMTIsMk0xMiw0QTgsOCAwIDAsMCA0LDEyQTgsOCAwIDAsMCAxMiwyMEE4LDggMCAwLDAgMjAsMTJBOCw4IDAgMCwwIDEyLDRaIi8+PC9zdmc+';
-                        }}
-                      />
+                    <div className="bg-cyan-400/10 p-2 rounded-lg mr-4 group-hover:bg-cyan-400/20 transition-all">
+                      <FaShieldAlt className="text-cyan-400" />
                     </div>
-                    <span className="font-mono text-cyan-300 text-sm">{cert.name}</span>
+                    <span className="font-mono text-cyan-300">{cert}</span>
                   </div>
                 </div>
               ))}
