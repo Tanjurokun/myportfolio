@@ -104,10 +104,13 @@ export default function Home() {
                     <h4 className="text-cyan-300 font-medium mb-2">Vulnerability Management</h4>
                     <ul className="space-y-2">
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Implemented vulnerability management system and conducted regular assessments to identify risks
+                        vulnerability scanning, regularly conducting vulnerability assessments
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
                         Coordinated security patching across all systems
+                      </li>
+                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Recommendations for remediation and improving security posture
                       </li>
                     </ul>
                   </div>
@@ -119,7 +122,10 @@ export default function Home() {
                         Deployed and managed SIEM solutions
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Developed threat detection rules and use cases
+                        Fine-tuned security use cases and correlation rules
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Integrated diverse data sources 
                       </li>
                     </ul>
                   </div>
@@ -131,7 +137,10 @@ export default function Home() {
                         Implemented and maintained PCI DSS controls
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        Developed security policies and SOPs
+                        Ensured secure logging, monitoring, and retention 
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Supported internal and external pre-assessment
                       </li>
                     </ul>
                   </div>
@@ -144,6 +153,9 @@ export default function Home() {
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
                         Monitored security metrics and provided reports
+                      </li>
+                      <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
+                        Provide technical support for security issues
                       </li>
                     </ul>
                   </div>
