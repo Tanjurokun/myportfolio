@@ -104,7 +104,7 @@ export default function Home() {
                     <h4 className="text-cyan-300 font-medium mb-2">Vulnerability Management</h4>
                     <ul className="space-y-2">
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
-                        vulnerability scanning, regularly conducting vulnerability assessments
+                        Vulnerability scanning, regularly conducting vulnerability assessments
                       </li>
                       <li className="text-slate-300 text-sm before:content-['>'] before:text-cyan-400 before:mr-2">
                         Coordinated security patching across all systems
